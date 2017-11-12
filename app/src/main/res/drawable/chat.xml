@@ -1,0 +1,34 @@
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="110dp"
+    android:height="110dp"
+    android:viewportWidth="110"
+    android:viewportHeight="110">
+    <group android:name="multicolor">
+        <path
+            android:name="path"
+            android:pathData="M 55 0 C 24.624 0 0 24.624 0 55 C 0 85.376 24.624 110 55 110 C 85.376 110 110 85.376 110 55 C 110 24.624 85.376 0 55 0 Z"
+            android:fillColor="#25b7d3"
+            android:strokeWidth="1"/>
+        <path
+            android:name="path_1"
+            android:pathData="M 39 67 C 39 69.209 40.791 71 43 71 L 67 71 L 79 83 L 79 71 L 83 71 C 85.209 71 87 69.209 87 67 L 87 35 C 87 32.791 85.209 31 83 31 L 43 31 C 40.791 31 39 32.791 39 35 L 39 67 Z"
+            android:fillColor="#6fdaf1"
+            android:strokeWidth="1"/>
+        <path
+            android:name="path_2"
+            android:pathData="M 71 59 C 71 61.209 69.209 63 67 63 L 43 63 L 31 75 L 31 63 L 27 63 C 24.791 63 23 61.209 23 59 L 23 27 C 23 24.791 24.791 23 27 23 L 67 23 C 69.209 23 71 24.791 71 27 L 71 59 Z"
+            android:fillColor="#f0f1f1"
+            android:strokeWidth="1"/>
+        <path
+            android:name="path_3"
+            android:pathData="M 70.335 24.798 C 69.597 23.675 68.343 23 67 23 L 27 23 C 24.791 23 23 24.791 23 27 L 23 59 C 23 61.209 24.791 63 27 63 L 31 63 L 31 64.134 L 70.335 24.798 Z"
+            android:fillColor="#ffffff"
+            android:strokeWidth="1"/>
+        <path
+            android:name="path_4"
+            android:pathData="M 35 39 C 32.791 39 31 40.791 31 43 C 31 45.209 32.791 47 35 47 C 37.209 47 39 45.209 39 43 C 39 40.791 37.209 39 35 39 Z M 47 39 C 44.791 39 43 40.791 43 43 C 43 45.209 44.791 47 47 47 C 49.209 47 51 45.209 51 43 C 51 40.791 49.209 39 47 39 Z M 59 39 C 56.791 39 55 40.791 55 43 C 55 45.209 56.791 47 59 47 C 61.209 47 63 45.209 63 43 C 63 40.791 61.209 39 59 39 Z"
+            android:fillColor="#21b2d1"
+            android:strokeWidth="1"/>
+    </group>
+</vector>
