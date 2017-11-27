@@ -3,9 +3,10 @@
 buildscript {
 
     ext.versions = [
+            'kotlin'          : '1.1.61',
             'compileSdk'      : 27,//
             'targetSdk'       : 27,//
-            'buildTools'      : '27.0.0',//
+            'buildTools'      : '27.0.1',//
             'timber'          : '4.6.0',//
             'butterknife'     : '8.8.1',//
             'glide'           : '4.2.0',//
@@ -16,7 +17,7 @@ buildscript {
             'gson'            : '2.8.2',//
             'dagger'          : '2.13',//
             'calligraphy'     : '2.3.0',//
-            'supportLibrary'  : '27.0.0',//
+            'supportLibrary'  : '27.0.1',//
             'constraintLayout': '1.0.2',//
             'rxbinding'       : '2.0.0',//
             'debug_db'        : '1.0.1', //
@@ -30,7 +31,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

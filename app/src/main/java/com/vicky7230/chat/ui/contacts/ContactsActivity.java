@@ -7,6 +7,8 @@ import android.os.Bundle;
 import com.vicky7230.chat.R;
 import com.vicky7230.chat.ui.base.BaseActivity;
 
+import org.jivesoftware.smackx.search.UserSearchManager;
+
 import javax.inject.Inject;
 
 import butterknife.ButterKnife;

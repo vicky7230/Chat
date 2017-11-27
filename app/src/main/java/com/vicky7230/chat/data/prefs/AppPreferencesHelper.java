@@ -42,37 +42,37 @@ public class AppPreferencesHelper implements PreferencesHelper {
 
     @Override
     public String getLoggedInUserId() {
-        String userId = sharedPreferences.getString(LOGGED_IN_USER_ID, Config.NULL_ID);
-        return userId.equalsIgnoreCase(Config.NULL_ID) ? null : userId;
+        String userId = sharedPreferences.getString(LOGGED_IN_USER_ID, Config.INSTANCE.getNULL_ID());
+        return userId.equalsIgnoreCase(Config.INSTANCE.getNULL_ID()) ? null : userId;
     }
 
     @Override
     public void setLoggedInUserId(String userId) {
-        String id = userId == null ? Config.NULL_ID : userId;
+        String id = userId == null ? Config.INSTANCE.getNULL_ID() : userId;
         sharedPreferences.edit().putString(LOGGED_IN_USER_ID, id).apply();
     }
 
     @Override
     public String getLoggedInUserName() {
-        String userName = sharedPreferences.getString(LOGGED_IN_USER_NAME, Config.NULL_NAME);
-        return userName.equalsIgnoreCase(Config.NULL_NAME) ? null : userName;
+        String userName = sharedPreferences.getString(LOGGED_IN_USER_NAME, Config.INSTANCE.getNULL_NAME());
+        return userName.equalsIgnoreCase(Config.INSTANCE.getNULL_NAME()) ? null : userName;
     }
 
     @Override
     public void setLoggedInUserName(String userName) {
-        String name = userName == null ? Config.NULL_NAME : userName;
+        String name = userName == null ? Config.INSTANCE.getNULL_NAME() : userName;
         sharedPreferences.edit().putString(LOGGED_IN_USER_NAME, name).apply();
     }
 
     @Override
     public String getLoggedInUserToken() {
-        String token = sharedPreferences.getString(LOGGED_IN_USER_TOKEN, Config.NULL_TOKEN);
-        return token.endsWith(Config.NULL_TOKEN) ? null : token;
+        String token = sharedPreferences.getString(LOGGED_IN_USER_TOKEN, Config.INSTANCE.getNULL_TOKEN());
+        return token.endsWith(Config.INSTANCE.getNULL_TOKEN()) ? null : token;
     }
 
     @Override
     public void setLoggedInUserToken(String token) {
-        String t = token == null ? Config.NULL_TOKEN : token;
+        String t = token == null ? Config.INSTANCE.getNULL_TOKEN() : token;
         sharedPreferences.edit().putString(LOGGED_IN_USER_TOKEN, t).apply();
     }
 

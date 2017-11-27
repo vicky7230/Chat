@@ -26,7 +26,7 @@ public class ContactsPresenter<V extends ContactsMvpView> extends BasePresenter<
 
     @Override
     public void getRoster() {
-        getMvpView().showLoading();
+        /*getMvpView().showLoading();
         getCompositeDisposable().add(getDataManager().getRosterEntries()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -48,6 +48,8 @@ public class ContactsPresenter<V extends ContactsMvpView> extends BasePresenter<
                     Timber.e(throwable);
                     getMvpView().showError(throwable.getMessage());
                 })
-        );
+        );*/
+
+       // getDataManager().getUserSearchManager().getSearchServices().
     }
 }
